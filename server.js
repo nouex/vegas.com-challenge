@@ -53,7 +53,7 @@ function promisify(fn) {
 }
 
 function appendExtension(filename, defaultExtension) {
-    return path.extname(filename) ? filename : `${filename}${defaultExtension}`; 
+    return path.extname(filename) ? filename : `${filename}${defaultExtension}`;
 }
 
 function makeNotFoundResponse(err) {
@@ -101,7 +101,7 @@ function handleRequest(req, res) {
 
         // create success response object
         .then(makeSuccessResponse)
-        
+
         // if anything broke, just send a 404 and pretend we couldn't find anything
         // nothing fancy, it's just a simple file server
         .catch(makeNotFoundResponse)
@@ -120,6 +120,9 @@ function handleRequest(req, res) {
                 console.log(`:: INFO :: <- Request for ${uri} successfully returned. Content type sent ${contentType}.`);
             }
 
+            res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+            res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+            res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
             res.writeHead(status, { 'Content-Type': contentType });
             res.end(r.body);
         });

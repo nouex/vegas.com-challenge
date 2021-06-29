@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #45382F;
+  font-size: 20px;
+}
+
+@font-face {
+    font-family: 'Icons';
+    src: url('http://localhost:8888/assets/fonts/icons.eot'), url('http://localhost:8888/assets/fonts/icons.ttf') format('truetype'), url('http://localhost:8888/assets/fonts/icons.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: #9999A3;
+
+  .price {
+    color: #F38722;
+    font-size: 60px;
+    font-weight: 600;
+  }
+
+  .name {
+    display: inline;
+    margin-right: 10px;
+    font-weight: 500;
+    color: #6B6C7A;
+  }
+}
+
+.page {
+  display: flex;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.side-bar {
+  width: 25%;
+  margin: 0 25px;
+}
+
+.hotel-list {
+  background-color: #EFEFEF;
+  color: #946C9B;
+  padding: 20px 10px;
+}
+
+.hotel {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  .name {
+    max-width: 230px;
+    text-align: left;
+  }
+
+  .price {
+    color: #837C89;
+  }
+}
+
+.content {
+  box-sizing: border-box;
+  width: 75%;
+  margin: 0 25px;
+  text-align: left;
+
+  img {
+    width: 100%;
+  }
+}
+
+.hotel-img {
+  width: 100%;
+  object-fit: fill;
+  margin-bottom: 40px;
+}
+
+.detail {
+  margin-bottom: 30px;
+}
+
+.icon {
+  margin-right: 5px;
+  color: #6B6C7A;
+  font-family: Icons;
+}
+
+.icon-star:after {
+  content: "\2605";
+}
+
+.icon-mark:after {
+  content: "\2352";
+}
+
+.icon-phone:after {
+  content: "\2706";
+}
+
+.icon-like:after {
+  content: "\2764";
+}
+
+.icon-up:after {
+  content: "\2191";
+}
+
+.icon-down:after {
+  content: "\2193";
+}
+
+.header-info-container {
+  margin-top: 20px;
+}
+
+.header-info {
+  margin-right: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 30px;
+  background-color: #895E96;
+  height: 85px;
+  color: white;
+  font-size: 30px;
+}
+
+.tab {
+  width: 33%;
+  display: inline-block;
+  color: #CCB5DE;
+  padding-top: 20px;
+}
+
+.tab.active {
+  color: white;
+  border-bottom: 5px solid #733080;
+}
+
+.tab-txt {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.tab-content {
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.purple-txt {
+  color: #895E96;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.address {
+  margin-left: 10px;
+}
