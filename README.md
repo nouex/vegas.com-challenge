@@ -1,3 +1,17 @@
+# Vegas.com Coding Challenge
+
+This project uses create-react-app to bootstrap the application.
+
+## Steps to Reproduce
+1. `yarn install`
+2. `yarn start`
+3. `node server.js`
+4. navigate to http://localhost:3000/
+
+**Note**: make sure to use the default port (8888) when starting the server and port 3000 for the client, otherwise requests are going to be blocked by CORS policy.
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
